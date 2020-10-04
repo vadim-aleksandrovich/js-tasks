@@ -3,6 +3,7 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function transform(arr) {
   const newArr = [];
   if (!Array.isArray(arr)) throw Error();
+
   for (let i = 0; i < arr.length; i++) {
     switch (arr[i]) {
       case "--discard-prev":
