@@ -15,7 +15,7 @@ const chainMaker = {
     if (this.box[position] == undefined) {
       this.box = [];
       throw CustomError("Not implemented");
-    } else this.box.splice(position - , 1);
+    } else this.box.splice(position - 1, 1);
 
     return this;
   },
